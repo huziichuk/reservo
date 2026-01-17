@@ -1,3 +1,4 @@
 [submodule "reservo-backend"]
 	path = reservo-backend
 	url = https://github.com/twonumberfortyfives/reservo-backend
+	branch = main
