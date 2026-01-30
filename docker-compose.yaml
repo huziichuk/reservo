@@ -1,4 +1,18 @@
 services:
+  frontend:
+    build:
+      context: ./reservo-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    env_file:
+      - .env
+    restart: unless-stopped
+    volumes:
+      - ./reservo-frontend:/frontend
+      - /frontend/node_modules
+
+
   backend:
     build:
       context: ./reservo-backend
