@@ -9,7 +9,7 @@
       }
     },
     {
-      "path": "eservo-frontend",
+      "path": "reservo-frontend",
       "name": "Frontend",
       "settings": {
         "typescript.tsdk": "node_modules/typescript/lib",
