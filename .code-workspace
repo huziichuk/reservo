@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": "reservo-backend",
+      "name": "Backend",
+      "settings": {
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "eslint.nodePath": "node_modules"
+      }
+    },
+    {
+      "path": "eservo-frontend",
+      "name": "Frontend",
+      "settings": {
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "eslint.nodePath": "node_modules"
+      }
+    }
+  ],
+}
