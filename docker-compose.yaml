@@ -15,16 +15,15 @@ services:
 
   backend:
     build:
-      context: ./reservo-backend
+      context: ./reservo-backend-dotnet
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "8000:8000"
     env_file:
       - .env
     restart: unless-stopped
     volumes:
-      - ./reservo-backend:/backend
-      - /backend/node_modules
+      - ./reservo-backend-dotnet:/reservo-backend-dotnet
 
 
   db:
