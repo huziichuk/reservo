@@ -7,7 +7,6 @@ services:
       - "4200:4200"
     env_file:
       - .env
-    restart: unless-stopped
     volumes:
       - ./reservo-frontend:/frontend
       - /frontend/node_modules
@@ -26,9 +25,8 @@ services:
       - ./reservo-backend-dotnet:/reservo-backend-dotnet
 
 
-  db:
+  postgres:
     image: postgres:17
-    restart: always
     ports:
       - 5432:5432
     environment:
@@ -39,6 +37,5 @@ services:
 
   adminer:
     image: adminer
-    restart: always
     ports:
-      - 8080:8080
+      - 8000:8080
